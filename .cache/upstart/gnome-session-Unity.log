@@ -1,0 +1,243 @@
+
+** (nm-connection-editor:3778): WARNING **: Invalid setting IPv4 Settings: addresses
+
+** (nm-connection-editor:3778): WARNING **: Invalid setting IPv4 Settings: addresses
+
+** (nm-connection-editor:3778): WARNING **: ui_to_setting: IPv4 address '<none>' missing or invalid!
+
+** (nm-connection-editor:3778): WARNING **: Invalid setting IPv4 Settings
+
+** (nm-connection-editor:3778): WARNING **: ui_to_setting: IPv4 address '' missing or invalid!
+
+** (nm-connection-editor:3778): WARNING **: Invalid setting IPv4 Settings
+
+(nm-connection-editor:3778): GLib-GObject-CRITICAL **: g_object_ref: assertion 'G_IS_OBJECT (object)' failed
+
+(nm-connection-editor:3778): Gtk-CRITICAL **: gtk_widget_is_sensitive: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-connection-editor:3778): Gtk-CRITICAL **: gtk_widget_has_grab: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-connection-editor:3778): Gtk-CRITICAL **: gtk_widget_get_style_context: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-connection-editor:3778): Gtk-CRITICAL **: gtk_style_context_set_state: assertion 'GTK_IS_STYLE_CONTEXT (context)' failed
+
+(nm-connection-editor:3778): GLib-GObject-WARNING **: instance with invalid (NULL) class pointer
+
+(nm-connection-editor:3778): GLib-GObject-CRITICAL **: g_signal_emit_valist: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(nm-connection-editor:3778): GLib-GObject-WARNING **: instance with invalid (NULL) class pointer
+
+(nm-connection-editor:3778): GLib-GObject-CRITICAL **: g_signal_emit_valist: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(nm-connection-editor:3778): Gtk-CRITICAL **: _gtk_widget_list_devices: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(nm-connection-editor:3778): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+** (nm-connection-editor:3778): WARNING **: ui_to_setting: IPv4 address '' missing or invalid!
+
+** (nm-connection-editor:3778): WARNING **: Invalid setting IPv4 Settings
+
+** (nm-connection-editor:3778): WARNING **: ui_to_setting: IPv4 address '' missing or invalid!
+
+** (nm-connection-editor:3778): WARNING **: Invalid setting IPv4 Settings
+
+** (nm-connection-editor:3778): WARNING **: ui_to_setting: IPv4 prefix '<none>' missing!
+
+** (nm-connection-editor:3778): WARNING **: Invalid setting IPv4 Settings
+ERROR 2016-01-28 10:19:01 unity.settings UnitySettings.cpp:244 Invalid monitor index: -1. Returning index 0 monitor instead.
+WARN  2016-01-28 10:19:05 unity.iconloader IconLoader.cpp:755 Unable to load icon file:/// at size -1x22: Can't open directory
+
+(gnome-terminal:5806): GLib-GIO-CRITICAL **: g_settings_get: the format string may not contain '&' (key 'monospace-font-name' from schema 'org.gnome.desktop.interface'). This call will probably stop working with a future version of glib.
+WARN  2016-01-28 10:19:09 unity.iconloader IconLoader.cpp:755 Unable to load icon https://productsearch.ubuntu.com/imgs/weatherchannel/logo.svg at size 96x96: HTTP Client Error: Forbidden
+WARN  2016-01-28 10:19:09 unity.iconloader IconLoader.cpp:755 Unable to load icon https://productsearch.ubuntu.com/smartscopes/anonymiser?u=http%3A%2F%2Fs3.amazonaws.com%2Fimages.api-product.skimlinks.com%2Fimage%2Fe1388c3c6cd6417e5affb2f5e63823c9_original&s=O8bwkRvLFdQE67gGNw_5ykz9a1Vj6JnYSlH5OA== at size 92x96: HTTP Error: Bad Request
+WARN  2016-01-28 10:19:09 unity.iconloader IconLoader.cpp:755 Unable to load icon . UnityProtocolAnnotatedIcon %7B'base-icon':%20%3C'https://productsearch.ubuntu.com/smartscopes/anonymiser%3Fu=http%253A%252F%252Fs3.amazonaws.com%252Fimages.api-product.skimlinks.com%252Fimage%252Fe1388c3c6cd6417e5affb2f5e63823c9_original&s=O8bwkRvLFdQE67gGNw_5ykz9a1Vj6JnYSlH5OA=='%3E,%20'category':%20%3Cuint32%209%3E,%20'ribbon':%20%3C'$9.52'%3E%7D at size 96x96: 
+WARN  2016-01-28 10:19:09 unity.iconloader IconLoader.cpp:755 Unable to load icon https://productsearch.ubuntu.com/smartscopes/anonymiser?u=http%3A%2F%2Fs3.amazonaws.com%2Fimages.api-product.skimlinks.com%2Fimage%2F685839a4b152d0e3f8a21e6802b47f44_original&s=ryLZrUu7Qd2einiHWWf-ZkUmu8vPmC76x63ljQ== at size 92x96: HTTP Error: Bad Request
+WARN  2016-01-28 10:19:09 unity.iconloader IconLoader.cpp:755 Unable to load icon . UnityProtocolAnnotatedIcon %7B'base-icon':%20%3C'https://productsearch.ubuntu.com/smartscopes/anonymiser%3Fu=http%253A%252F%252Fs3.amazonaws.com%252Fimages.api-product.skimlinks.com%252Fimage%252F685839a4b152d0e3f8a21e6802b47f44_original&s=ryLZrUu7Qd2einiHWWf-ZkUmu8vPmC76x63ljQ=='%3E,%20'category':%20%3Cuint32%209%3E,%20'ribbon':%20%3C'$34.01'%3E%7D at size 96x96: 
+
+(nm-connection-editor:5828): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:5828): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:5828): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(nm-connection-editor:5828): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:5828): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:5828): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+(nm-connection-editor:5828): GLib-GIO-CRITICAL **: g_settings_new_with_path: assertion 'path_is_valid (path)' failed
+
+(nm-connection-editor:5828): GLib-GIO-CRITICAL **: g_settings_get_value: assertion 'G_IS_SETTINGS (settings)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_get_type: assertion 'value != NULL' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(nm-connection-editor:5828): GLib-CRITICAL **: g_variant_unref: assertion 'value != NULL' failed
+
+(nm-connection-editor:5828): GLib-GObject-CRITICAL **: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+** (nm-connection-editor:5828): WARNING **: Invalid setting IPv4 Settings: addresses
+
+** (nm-connection-editor:5828): WARNING **: Invalid setting IPv4 Settings: addresses
+
+** (nm-connection-editor:5828): WARNING **: ui_to_setting: IPv4 address '<none>' missing or invalid!
+
+** (nm-connection-editor:5828): WARNING **: Invalid setting IPv4 Settings
+
+(nautilus:1955): GLib-CRITICAL **: Source ID 299 was not found when attempting to remove it
+
+(nautilus:1955): GLib-CRITICAL **: Source ID 300 was not found when attempting to remove it
+
+(nautilus:1955): GLib-CRITICAL **: Source ID 301 was not found when attempting to remove it
+gnome-session[1668]: Gdk-WARNING: gnome-session: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(gnome-terminal:5806): Gdk-WARNING **: gnome-terminal: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(nm-applet:1958): Gdk-WARNING **: nm-applet: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(unity-fallback-mount-helper:1959): Gdk-WARNING **: unity-fallback-mount-helper: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(update-notifier:4545): Gdk-WARNING **: update-notifier: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(telepathy-indicator:2158): Gdk-WARNING **: telepathy-indicator: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+gnome-session-is-accelerated: llvmpipe detected.
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-7rHVfa
+GPG_AGENT_INFO=/run/user/1000/keyring-7rHVfa/gpg:0:1
+SSH_AUTH_SOCK=/run/user/1000/keyring-7rHVfa/ssh
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-7rHVfa
+GPG_AGENT_INFO=/run/user/1000/keyring-7rHVfa/gpg:0:1
+SSH_AUTH_SOCK=/run/user/1000/keyring-7rHVfa/ssh
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-7rHVfa
+GPG_AGENT_INFO=/run/user/1000/keyring-7rHVfa/gpg:0:1
+SSH_AUTH_SOCK=/run/user/1000/keyring-7rHVfa/ssh
+GNOME_KEYRING_CONTROL=/run/user/1000/keyring-7rHVfa
+GPG_AGENT_INFO=/run/user/1000/keyring-7rHVfa/gpg:0:1
+SSH_AUTH_SOCK=/run/user/1000/keyring-7rHVfa/ssh
+compiz (core) - Info: Loading plugin: core
+compiz (core) - Info: Starting plugin: core
+compiz (core) - Info: Loading plugin: ccp
+compiz (core) - Info: Starting plugin: ccp
+compizconfig - Info: Backend     : gsettings
+compizconfig - Info: Integration : true
+compizconfig - Info: Profile     : unity
+
+** (process:2111): CRITICAL **: bluez.vala:104: GDBus.Error:org.bluez.Error.NoSuchAdapter: No such adapter
+
+(process:2103): indicator-application-service-WARNING **: Unable to get watcher name 'org.kde.StatusNotifierWatcher'
+
+(process:2103): indicator-application-service-WARNING **: Name Lost
+compiz (core) - Info: Loading plugin: composite
+compiz (core) - Info: Starting plugin: composite
+compiz (core) - Info: Loading plugin: opengl
+compiz (core) - Info: Starting plugin: opengl
+compiz (core) - Info: Loading plugin: regex
+compiz (core) - Info: Starting plugin: regex
+compiz (core) - Info: Loading plugin: wall
+compiz (core) - Info: Starting plugin: wall
+compiz (core) - Info: Loading plugin: imgpng
+compiz (core) - Info: Starting plugin: imgpng
+
+** (nm-applet:2104): CRITICAL **: nm_secret_agent_register: assertion 'priv->registered == FALSE' failed
+compiz (core) - Info: Loading plugin: compiztoolbox
+compiz (core) - Info: Starting plugin: compiztoolbox
+compiz (core) - Info: Loading plugin: mousepoll
+compiz (core) - Info: Starting plugin: mousepoll
+compiz (core) - Info: Loading plugin: copytex
+compiz (core) - Info: Starting plugin: copytex
+compiz (core) - Info: Loading plugin: grid
+compiz (core) - Info: Starting plugin: grid
+compiz (core) - Info: Loading plugin: snap
+compiz (core) - Info: Starting plugin: snap
+compiz (core) - Info: Loading plugin: resize
+compiz (core) - Info: Starting plugin: resize
+compiz (core) - Info: Loading plugin: vpswitch
+compiz (core) - Info: Starting plugin: vpswitch
+compiz (core) - Info: Loading plugin: place
+compiz (core) - Info: Starting plugin: place
+compiz (core) - Info: Loading plugin: move
+compiz (core) - Info: Starting plugin: move
+compiz (core) - Info: Loading plugin: commands
+compiz (core) - Info: Starting plugin: commands
+compiz (core) - Info: Loading plugin: animation
+compiz (core) - Info: Starting plugin: animation
+compiz (core) - Info: Loading plugin: unitymtgrabhandles
+compiz (core) - Info: Starting plugin: unitymtgrabhandles
+compiz (core) - Info: Loading plugin: fade
+compiz (core) - Info: Starting plugin: fade
+compiz (core) - Info: Loading plugin: expo
+compiz (core) - Info: Starting plugin: expo
+compiz (core) - Info: Loading plugin: session
+compiz (core) - Info: Starting plugin: session
+I/O warning : failed to load external entity "/home/jfloyd/.compiz/session/101e0f232b5ae25b87145399449669716900000018010001"
+compiz (core) - Info: Loading plugin: workarounds
+compiz (core) - Info: Starting plugin: workarounds
+compiz (core) - Info: Loading plugin: scale
+compiz (core) - Info: Starting plugin: scale
+compiz (core) - Info: Loading plugin: ezoom
+compiz (core) - Info: Starting plugin: ezoom
+compiz (core) - Info: Loading plugin: unityshell
+compiz (core) - Info: Starting plugin: unityshell
+WARN  2016-01-28 10:21:40 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'org.gnome.Shell' yet as we don't have a connection, waiting for it...
+ERROR 2016-01-28 10:21:40 unity.debug.interface DebugDBusInterface.cpp:216 Unable to load entry point in libxpathselect: libxpathselect.so.1.4: cannot open shared object file: No such file or directory
+WARN  2016-01-28 10:21:40 xim.controller XIMController.cpp:103 IBus natively supported.
+WARN  2016-01-28 10:21:40 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'com.canonical.Unity.Launcher' yet as we don't have a connection, waiting for it...
+WARN  2016-01-28 10:21:40 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'com.canonical.Unity.Dash' yet as we don't have a connection, waiting for it...
+WARN  2016-01-28 10:21:40 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'org.gnome.SessionManager.EndSessionDialog' yet as we don't have a connection, waiting for it...
+WARN  2016-01-28 10:21:40 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'com.canonical.Unity.Session' yet as we don't have a connection, waiting for it...
+WARN  2016-01-28 10:21:40 unity.glib.dbus.server GLibDBusServer.cpp:579 Can't register object 'org.gnome.ScreenSaver' yet as we don't have a connection, waiting for it...
+WARN  2016-01-28 10:21:42 unityo (appinfo2) <unknown>:0 g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+WARN  2016-01-28 10:21:42 unityo (appinfo2) <unknown>:0 g_settings_set_value: value for key 'visual-bell-type' in schema 'org.gnome.desktop.wm.preferences' is outside of valid range
+ERROR 2016-01-28 10:21:43 unity.glib.dbus.server GLibDBusServer.cpp:524 DBus name lost 'org.gnome.Shell'
+ERROR 2016-01-28 10:21:43 unity.glib.dbus.server GLibDBusServer.cpp:524 DBus name lost 'com.canonical.Unity'
+
+(nm-applet:2104): nm-applet-WARNING **: Could not find ShellVersion property on org.gnome.Shell after 5 tries
+
+(zeitgeist-datahub:2265): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+
+(zeitgeist-datahub:2265): GLib-GObject-CRITICAL **: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(nautilus:2098): GLib-CRITICAL **: Source ID 288 was not found when attempting to remove it
+
+(nautilus:2098): GLib-CRITICAL **: Source ID 289 was not found when attempting to remove it
+
+(nautilus:2098): GLib-CRITICAL **: Source ID 290 was not found when attempting to remove it
+
+(update-notifier:2326): Gdk-WARNING **: update-notifier: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+gnome-session[1801]: Gdk-WARNING: gnome-session: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(nm-applet:2104): Gdk-WARNING **: nm-applet: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(telepathy-indicator:2245): Gdk-WARNING **: telepathy-indicator: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+(unity-fallback-mount-helper:2101): Gdk-WARNING **: unity-fallback-mount-helper: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+

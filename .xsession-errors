@@ -1,0 +1,30 @@
+pci id for fd 4: 80ee:beef, driver (null)
+libGL error: core dri or dri2 extension not found
+libGL error: failed to load driver: vboxvideo
+Script for ibus started at run_im.
+Script for auto started at run_im.
+Script for default started at run_im.
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd main process ended, respawning
+init: at-spi2-registryd respawning too fast, stopped
+init: update-notifier-crash (/var/crash/_usr_sbin_unity-greeter.112.crash) main process (1773) terminated with status 1
+init: unity-settings-daemon main process ended, respawning
+init: gnome-session (Unity) main process (1801) terminated with status 1
+init: unity-panel-service main process (1812) terminated with status 1
+init: indicator-printers main process (1986) terminated with status 1
+init: indicator-bluetooth main process (1971) killed by TERM signal
+init: indicator-power main process (1973) killed by TERM signal
+init: indicator-datetime main process (1977) killed by TERM signal
+init: indicator-session main process (1991) killed by TERM signal
+init: unity-settings-daemon main process (3248) killed by TERM signal
+init: indicator-application main process (2007) killed by TERM signal
+init: Disconnected from notified D-Bus bus
+init: hud main process (1799) terminated with status 1

@@ -1,0 +1,4 @@
+.text offset: 0x400
+leave: 0x08048542
+start of .txt: 0x08048400
+difference: 0x142

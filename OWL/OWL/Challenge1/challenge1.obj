@@ -1,0 +1,281 @@
+
+challenge1.bin:     file format elf32-i386
+
+
+Disassembly of section .init:
+
+080482f4 <_init>:
+ 80482f4:	53                   	push   %ebx
+ 80482f5:	83 ec 08             	sub    $0x8,%esp
+ 80482f8:	e8 b3 00 00 00       	call   80483b0 <__x86.get_pc_thunk.bx>
+ 80482fd:	81 c3 03 1d 00 00    	add    $0x1d03,%ebx
+ 8048303:	8b 83 fc ff ff ff    	mov    -0x4(%ebx),%eax
+ 8048309:	85 c0                	test   %eax,%eax
+ 804830b:	74 05                	je     8048312 <_init+0x1e>
+ 804830d:	e8 3e 00 00 00       	call   8048350 <__gmon_start__@plt>
+ 8048312:	83 c4 08             	add    $0x8,%esp
+ 8048315:	5b                   	pop    %ebx
+ 8048316:	c3                   	ret    
+
+Disassembly of section .plt:
+
+08048320 <printf@plt-0x10>:
+ 8048320:	ff 35 04 a0 04 08    	pushl  0x804a004
+ 8048326:	ff 25 08 a0 04 08    	jmp    *0x804a008
+ 804832c:	00 00                	add    %al,(%eax)
+	...
+
+08048330 <printf@plt>:
+ 8048330:	ff 25 0c a0 04 08    	jmp    *0x804a00c
+ 8048336:	68 00 00 00 00       	push   $0x0
+ 804833b:	e9 e0 ff ff ff       	jmp    8048320 <_init+0x2c>
+
+08048340 <getchar@plt>:
+ 8048340:	ff 25 10 a0 04 08    	jmp    *0x804a010
+ 8048346:	68 08 00 00 00       	push   $0x8
+ 804834b:	e9 d0 ff ff ff       	jmp    8048320 <_init+0x2c>
+
+08048350 <__gmon_start__@plt>:
+ 8048350:	ff 25 14 a0 04 08    	jmp    *0x804a014
+ 8048356:	68 10 00 00 00       	push   $0x10
+ 804835b:	e9 c0 ff ff ff       	jmp    8048320 <_init+0x2c>
+
+08048360 <exit@plt>:
+ 8048360:	ff 25 18 a0 04 08    	jmp    *0x804a018
+ 8048366:	68 18 00 00 00       	push   $0x18
+ 804836b:	e9 b0 ff ff ff       	jmp    8048320 <_init+0x2c>
+
+08048370 <__libc_start_main@plt>:
+ 8048370:	ff 25 1c a0 04 08    	jmp    *0x804a01c
+ 8048376:	68 20 00 00 00       	push   $0x20
+ 804837b:	e9 a0 ff ff ff       	jmp    8048320 <_init+0x2c>
+
+Disassembly of section .text:
+
+08048380 <_start>:
+ 8048380:	31 ed                	xor    %ebp,%ebp
+ 8048382:	5e                   	pop    %esi
+ 8048383:	89 e1                	mov    %esp,%ecx
+ 8048385:	83 e4 f0             	and    $0xfffffff0,%esp
+ 8048388:	50                   	push   %eax
+ 8048389:	54                   	push   %esp
+ 804838a:	52                   	push   %edx
+ 804838b:	68 c0 85 04 08       	push   $0x80485c0
+ 8048390:	68 50 85 04 08       	push   $0x8048550
+ 8048395:	51                   	push   %ecx
+ 8048396:	56                   	push   %esi
+ 8048397:	68 f9 84 04 08       	push   $0x80484f9
+ 804839c:	e8 cf ff ff ff       	call   8048370 <__libc_start_main@plt>
+ 80483a1:	f4                   	hlt    
+ 80483a2:	66 90                	xchg   %ax,%ax
+ 80483a4:	66 90                	xchg   %ax,%ax
+ 80483a6:	66 90                	xchg   %ax,%ax
+ 80483a8:	66 90                	xchg   %ax,%ax
+ 80483aa:	66 90                	xchg   %ax,%ax
+ 80483ac:	66 90                	xchg   %ax,%ax
+ 80483ae:	66 90                	xchg   %ax,%ax
+
+080483b0 <__x86.get_pc_thunk.bx>:
+ 80483b0:	8b 1c 24             	mov    (%esp),%ebx
+ 80483b3:	c3                   	ret    
+ 80483b4:	66 90                	xchg   %ax,%ax
+ 80483b6:	66 90                	xchg   %ax,%ax
+ 80483b8:	66 90                	xchg   %ax,%ax
+ 80483ba:	66 90                	xchg   %ax,%ax
+ 80483bc:	66 90                	xchg   %ax,%ax
+ 80483be:	66 90                	xchg   %ax,%ax
+
+080483c0 <deregister_tm_clones>:
+ 80483c0:	b8 2b a0 04 08       	mov    $0x804a02b,%eax
+ 80483c5:	2d 28 a0 04 08       	sub    $0x804a028,%eax
+ 80483ca:	83 f8 06             	cmp    $0x6,%eax
+ 80483cd:	77 01                	ja     80483d0 <deregister_tm_clones+0x10>
+ 80483cf:	c3                   	ret    
+ 80483d0:	b8 00 00 00 00       	mov    $0x0,%eax
+ 80483d5:	85 c0                	test   %eax,%eax
+ 80483d7:	74 f6                	je     80483cf <deregister_tm_clones+0xf>
+ 80483d9:	55                   	push   %ebp
+ 80483da:	89 e5                	mov    %esp,%ebp
+ 80483dc:	83 ec 18             	sub    $0x18,%esp
+ 80483df:	c7 04 24 28 a0 04 08 	movl   $0x804a028,(%esp)
+ 80483e6:	ff d0                	call   *%eax
+ 80483e8:	c9                   	leave  
+ 80483e9:	c3                   	ret    
+ 80483ea:	8d b6 00 00 00 00    	lea    0x0(%esi),%esi
+
+080483f0 <register_tm_clones>:
+ 80483f0:	b8 28 a0 04 08       	mov    $0x804a028,%eax
+ 80483f5:	2d 28 a0 04 08       	sub    $0x804a028,%eax
+ 80483fa:	c1 f8 02             	sar    $0x2,%eax
+ 80483fd:	89 c2                	mov    %eax,%edx
+ 80483ff:	c1 ea 1f             	shr    $0x1f,%edx
+ 8048402:	01 d0                	add    %edx,%eax
+ 8048404:	d1 f8                	sar    %eax
+ 8048406:	75 01                	jne    8048409 <register_tm_clones+0x19>
+ 8048408:	c3                   	ret    
+ 8048409:	ba 00 00 00 00       	mov    $0x0,%edx
+ 804840e:	85 d2                	test   %edx,%edx
+ 8048410:	74 f6                	je     8048408 <register_tm_clones+0x18>
+ 8048412:	55                   	push   %ebp
+ 8048413:	89 e5                	mov    %esp,%ebp
+ 8048415:	83 ec 18             	sub    $0x18,%esp
+ 8048418:	89 44 24 04          	mov    %eax,0x4(%esp)
+ 804841c:	c7 04 24 28 a0 04 08 	movl   $0x804a028,(%esp)
+ 8048423:	ff d2                	call   *%edx
+ 8048425:	c9                   	leave  
+ 8048426:	c3                   	ret    
+ 8048427:	89 f6                	mov    %esi,%esi
+ 8048429:	8d bc 27 00 00 00 00 	lea    0x0(%edi,%eiz,1),%edi
+
+08048430 <__do_global_dtors_aux>:
+ 8048430:	80 3d 40 a0 04 08 00 	cmpb   $0x0,0x804a040
+ 8048437:	75 13                	jne    804844c <__do_global_dtors_aux+0x1c>
+ 8048439:	55                   	push   %ebp
+ 804843a:	89 e5                	mov    %esp,%ebp
+ 804843c:	83 ec 08             	sub    $0x8,%esp
+ 804843f:	e8 7c ff ff ff       	call   80483c0 <deregister_tm_clones>
+ 8048444:	c6 05 40 a0 04 08 01 	movb   $0x1,0x804a040
+ 804844b:	c9                   	leave  
+ 804844c:	f3 c3                	repz ret 
+ 804844e:	66 90                	xchg   %ax,%ax
+
+08048450 <frame_dummy>:
+ 8048450:	a1 10 9f 04 08       	mov    0x8049f10,%eax
+ 8048455:	85 c0                	test   %eax,%eax
+ 8048457:	74 1f                	je     8048478 <frame_dummy+0x28>
+ 8048459:	b8 00 00 00 00       	mov    $0x0,%eax
+ 804845e:	85 c0                	test   %eax,%eax
+ 8048460:	74 16                	je     8048478 <frame_dummy+0x28>
+ 8048462:	55                   	push   %ebp
+ 8048463:	89 e5                	mov    %esp,%ebp
+ 8048465:	83 ec 18             	sub    $0x18,%esp
+ 8048468:	c7 04 24 10 9f 04 08 	movl   $0x8049f10,(%esp)
+ 804846f:	ff d0                	call   *%eax
+ 8048471:	c9                   	leave  
+ 8048472:	e9 79 ff ff ff       	jmp    80483f0 <register_tm_clones>
+ 8048477:	90                   	nop
+ 8048478:	e9 73 ff ff ff       	jmp    80483f0 <register_tm_clones>
+
+0804847d <readString>:
+ 804847d:	55                   	push   %ebp
+ 804847e:	89 e5                	mov    %esp,%ebp
+ 8048480:	83 ec 58             	sub    $0x58,%esp
+ 8048483:	e8 b8 fe ff ff       	call   8048340 <getchar@plt>
+ 8048488:	89 45 f4             	mov    %eax,-0xc(%ebp) //ebp-12 = c
+ 804848b:	83 7d f4 ff          	cmpl   $0xffffffff,-0xc(%ebp)
+ 804848f:	74 21                	je     80484b2 <readString+0x35>
+ 8048491:	83 7d f4 0a          	cmpl   $0xa,-0xc(%ebp)
+ 8048495:	74 1b                	je     80484b2 <readString+0x35>
+ 8048497:	a1 48 a0 04 08       	mov    0x804a048,%eax
+ 804849c:	8b 55 f4             	mov    -0xc(%ebp),%edx
+ 804849f:	88 54 05 b4          	mov    %dl,-0x4c(%ebp,%eax,1)
+ 80484a3:	a1 48 a0 04 08       	mov    0x804a048,%eax
+ 80484a8:	83 c0 01             	add    $0x1,%eax
+ 80484ab:	a3 48 a0 04 08       	mov    %eax,0x804a048
+ 80484b0:	eb d1                	jmp    8048483 <readString+0x6>
+ 80484b2:	a1 48 a0 04 08       	mov    0x804a048,%eax
+ 80484b7:	c6 44 05 b4 00       	movb   $0x0,-0x4c(%ebp,%eax,1)
+ 80484bc:	c7 05 48 a0 04 08 00 	movl   $0x0,0x804a048
+ 80484c3:	00 00 00 
+ 80484c6:	eb 25                	jmp    80484ed <readString+0x70>
+ 80484c8:	a1 48 a0 04 08       	mov    0x804a048,%eax
+ 80484cd:	89 c2                	mov    %eax,%edx
+ 80484cf:	8b 45 08             	mov    0x8(%ebp),%eax
+ 80484d2:	01 c2                	add    %eax,%edx
+ 80484d4:	a1 48 a0 04 08       	mov    0x804a048,%eax
+ 80484d9:	0f b6 44 05 b4       	movzbl -0x4c(%ebp,%eax,1),%eax
+ 80484de:	88 02                	mov    %al,(%edx)
+ 80484e0:	a1 48 a0 04 08       	mov    0x804a048,%eax
+ 80484e5:	83 c0 01             	add    $0x1,%eax
+ 80484e8:	a3 48 a0 04 08       	mov    %eax,0x804a048
+ 80484ed:	a1 48 a0 04 08       	mov    0x804a048,%eax
+ 80484f2:	83 f8 3f             	cmp    $0x3f,%eax
+ 80484f5:	7e d1                	jle    80484c8 <readString+0x4b>
+ 80484f7:	c9                   	leave  
+ 80484f8:	c3                   	ret    
+
+080484f9 <main>:
+ 80484f9:	55                   	push   %ebp
+ 80484fa:	89 e5                	mov    %esp,%ebp
+ 80484fc:	83 e4 f0             	and    $0xfffffff0,%esp
+ 80484ff:	83 ec 10             	sub    $0x10,%esp
+ 8048502:	c7 04 24 80 a0 04 08 	movl   $0x804a080,(%esp)
+ 8048509:	e8 6f ff ff ff       	call   804847d <readString>
+ 804850e:	a1 44 a0 04 08       	mov    0x804a044,%eax
+ 8048513:	85 c0                	test   %eax,%eax
+ 8048515:	75 16                	jne    804852d <main+0x34>
+ 8048517:	c7 44 24 04 80 a0 04 	movl   $0x804a080,0x4(%esp)
+ 804851e:	08 
+ 804851f:	c7 04 24 e0 85 04 08 	movl   $0x80485e0,(%esp)
+ 8048526:	e8 05 fe ff ff       	call   8048330 <printf@plt>
+ 804852b:	eb 14                	jmp    8048541 <main+0x48>
+ 804852d:	c7 44 24 04 80 a0 04 	movl   $0x804a080,0x4(%esp)
+ 8048534:	08 
+ 8048535:	c7 04 24 18 86 04 08 	movl   $0x8048618,(%esp)
+ 804853c:	e8 ef fd ff ff       	call   8048330 <printf@plt>
+ 8048541:	c7 04 24 00 00 00 00 	movl   $0x0,(%esp)
+ 8048548:	e8 13 fe ff ff       	call   8048360 <exit@plt>
+ 804854d:	66 90                	xchg   %ax,%ax
+ 804854f:	90                   	nop
+
+08048550 <__libc_csu_init>:
+ 8048550:	55                   	push   %ebp
+ 8048551:	57                   	push   %edi
+ 8048552:	31 ff                	xor    %edi,%edi
+ 8048554:	56                   	push   %esi
+ 8048555:	53                   	push   %ebx
+ 8048556:	e8 55 fe ff ff       	call   80483b0 <__x86.get_pc_thunk.bx>
+ 804855b:	81 c3 a5 1a 00 00    	add    $0x1aa5,%ebx
+ 8048561:	83 ec 1c             	sub    $0x1c,%esp
+ 8048564:	8b 6c 24 30          	mov    0x30(%esp),%ebp
+ 8048568:	8d b3 0c ff ff ff    	lea    -0xf4(%ebx),%esi
+ 804856e:	e8 81 fd ff ff       	call   80482f4 <_init>
+ 8048573:	8d 83 08 ff ff ff    	lea    -0xf8(%ebx),%eax
+ 8048579:	29 c6                	sub    %eax,%esi
+ 804857b:	c1 fe 02             	sar    $0x2,%esi
+ 804857e:	85 f6                	test   %esi,%esi
+ 8048580:	74 27                	je     80485a9 <__libc_csu_init+0x59>
+ 8048582:	8d b6 00 00 00 00    	lea    0x0(%esi),%esi
+ 8048588:	8b 44 24 38          	mov    0x38(%esp),%eax
+ 804858c:	89 2c 24             	mov    %ebp,(%esp)
+ 804858f:	89 44 24 08          	mov    %eax,0x8(%esp)
+ 8048593:	8b 44 24 34          	mov    0x34(%esp),%eax
+ 8048597:	89 44 24 04          	mov    %eax,0x4(%esp)
+ 804859b:	ff 94 bb 08 ff ff ff 	call   *-0xf8(%ebx,%edi,4)
+ 80485a2:	83 c7 01             	add    $0x1,%edi
+ 80485a5:	39 f7                	cmp    %esi,%edi
+ 80485a7:	75 df                	jne    8048588 <__libc_csu_init+0x38>
+ 80485a9:	83 c4 1c             	add    $0x1c,%esp
+ 80485ac:	5b                   	pop    %ebx
+ 80485ad:	5e                   	pop    %esi
+ 80485ae:	5f                   	pop    %edi
+ 80485af:	5d                   	pop    %ebp
+ 80485b0:	c3                   	ret    
+ 80485b1:	eb 0d                	jmp    80485c0 <__libc_csu_fini>
+ 80485b3:	90                   	nop
+ 80485b4:	90                   	nop
+ 80485b5:	90                   	nop
+ 80485b6:	90                   	nop
+ 80485b7:	90                   	nop
+ 80485b8:	90                   	nop
+ 80485b9:	90                   	nop
+ 80485ba:	90                   	nop
+ 80485bb:	90                   	nop
+ 80485bc:	90                   	nop
+ 80485bd:	90                   	nop
+ 80485be:	90                   	nop
+ 80485bf:	90                   	nop
+
+080485c0 <__libc_csu_fini>:
+ 80485c0:	f3 c3                	repz ret 
+
+Disassembly of section .fini:
+
+080485c4 <_fini>:
+ 80485c4:	53                   	push   %ebx
+ 80485c5:	83 ec 08             	sub    $0x8,%esp
+ 80485c8:	e8 e3 fd ff ff       	call   80483b0 <__x86.get_pc_thunk.bx>
+ 80485cd:	81 c3 33 1a 00 00    	add    $0x1a33,%ebx
+ 80485d3:	83 c4 08             	add    $0x8,%esp
+ 80485d6:	5b                   	pop    %ebx
+ 80485d7:	c3                   	ret    

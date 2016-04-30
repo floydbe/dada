@@ -1,0 +1,122 @@
+Delivered-To: benjaminfloyd@gmail.com
+Received: by 10.107.164.160 with SMTP id d32csp771613ioj;
+        Thu, 14 Apr 2016 10:53:55 -0700 (PDT)
+X-Received: by 10.140.251.195 with SMTP id w186mr21188422qhc.32.1460656434967;
+        Thu, 14 Apr 2016 10:53:54 -0700 (PDT)
+Return-Path: <bef2cj+caf_=benjaminfloyd=gmail.com@virginia.edu>
+Received: from iron1.mail.virginia.edu (iron1.mail.Virginia.EDU. [128.143.2.226])
+        by mx.google.com with ESMTP id 107si33351555qgj.45.2016.04.14.10.53.54
+        for <benjaminfloyd@gmail.com>;
+        Thu, 14 Apr 2016 10:53:54 -0700 (PDT)
+Received-SPF: pass (google.com: best guess record for domain of bef2cj+caf_=benjaminfloyd=gmail.com@virginia.edu designates 128.143.2.226 as permitted sender) client-ip=128.143.2.226;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: best guess record for domain of bef2cj+caf_=benjaminfloyd=gmail.com@virginia.edu designates 128.143.2.226 as permitted sender) smtp.mailfrom=bef2cj+caf_=benjaminfloyd=gmail.com@virginia.edu
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: A0CpAADi1w9XkkfVVdFeDg+CToFtAzOmGgEGgVWCAAGLPooghBkHPBABAQEBAQEBEgEBAQEHCwsJIS+EOCIRdAEHNwIkEgEFASIBNIgHomaBMT4xizaNXwGEegqFT4QniCuCVgWTHYRujg2PEI1sER6BDjeBbYFqV4kYAX0BAQE
+X-IPAS-Result: A0CpAADi1w9XkkfVVdFeDg+CToFtAzOmGgEGgVWCAAGLPooghBkHPBABAQEBAQEBEgEBAQEHCwsJIS+EOCIRdAEHNwIkEgEFASIBNIgHomaBMT4xizaNXwGEegqFT4QniCuCVgWTHYRujg2PEI1sER6BDjeBbYFqV4kYAX0BAQE
+X-IronPort-AV: E=Sophos;i="5.24,485,1454994000"; 
+   d="scan'208,217";a="803278699"
+X-Sender-IP: 209.85.213.71
+Received: from mail-vk0-f71.google.com ([209.85.213.71])
+  by iron1.mail.virginia.edu with ESMTP; 14 Apr 2016 13:51:17 -0400
+Received: by mail-vk0-f71.google.com with SMTP id f185so4060810vkb.3
+        for <benjaminfloyd@gmail.com>; Thu, 14 Apr 2016 10:51:17 -0700 (PDT)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20130820;
+        h=x-original-authentication-results:x-gm-message-state:delivered-to
+         :mime-version:date:message-id:subject:from:to;
+        bh=3RtUUle//+PP6OK40t2Xc6oBUtYt2U8aFqfhjy5RKQE=;
+        b=Tx8L220ERif3gmnVYpevZF45I2C0Qy269jeryXkiU/2wV0W1IpczWeIutCWoia3KjA
+         HOfCx7f9sRJab3/Piqmr8BEXstH++jRuKp+fx84CFuQFdPNllJMU/IGVVU97ICBHfAlX
+         hJkm7tuPKM8czEoa3cZxV9Iu8KMjRniDYjp0fE5dNhBjW8bWfClwq7sVFuiQ8ZHdlIdA
+         ujNgmCYsdRt0CCrkahSYJGBHE+UsqfCqE3vHLKaPqlEdUBj/xeM6R46TrX9eae0C2M+s
+         8lM2CIooGAPf+rjtkSF136aZri+BHztsVSdQnA4dNmkpY3n69AFeUZB58Tie7QJgQKVt
+         j48w==
+X-Original-Authentication-Results: mx.google.com;       spf=neutral (google.com: 209.85.215.69 is neither permitted nor denied by best guess record for domain of kwh5ye@virginia.edu) smtp.mailfrom=kwh5ye@virginia.edu
+X-Gm-Message-State: AOPr4FUvX8jsSC9JgmTV4zdaNEP+JUdM45uefQO9+UoJgwDX7yMUwqD5bF3ytj4Giqgsiv3woNzp3kSwA7qghqnCCoHi3Fp28OUP40VHP6+QndrAFKoOXmIOyrU1i4s6O3rIixFO9tllHC9D0ajNf46fwvzRFMENPiPC0McqQXs16XRqFaI=
+X-Received: by 10.55.79.86 with SMTP id d83mr20477195qkb.22.1460656277396;
+        Thu, 14 Apr 2016 10:51:17 -0700 (PDT)
+X-Received: by 10.55.79.86 with SMTP id d83mr20477185qkb.22.1460656277284;
+        Thu, 14 Apr 2016 10:51:17 -0700 (PDT)
+X-Forwarded-To: benjaminfloyd@gmail.com
+X-Forwarded-For: bef2cj@virginia.edu benjaminfloyd@gmail.com
+Delivered-To: bef2cj@goog.email.virginia.edu
+Received: by 10.140.106.139 with SMTP id e11csp800179qgf;
+        Thu, 14 Apr 2016 10:51:16 -0700 (PDT)
+X-Received: by 10.55.8.134 with SMTP id 128mr20334650qki.36.1460656276502;
+        Thu, 14 Apr 2016 10:51:16 -0700 (PDT)
+Return-Path: <kwh5ye@virginia.edu>
+Received: from iron4.mail.virginia.edu (iron4.mail.Virginia.EDU. [128.143.2.114])
+        by mx.google.com with ESMTP id b7si33255584qhd.42.2016.04.14.10.51.16
+        for <bef2cj@goog.email.virginia.edu>;
+        Thu, 14 Apr 2016 10:51:16 -0700 (PDT)
+Received-SPF: neutral (google.com: 209.85.215.69 is neither permitted nor denied by best guess record for domain of kwh5ye@virginia.edu) client-ip=209.85.215.69;
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: A0AJAgDi1w9XkkXXVdFeDg4Bgk6CI6YRCQEGgQ9GggABiz6EdQEBgXuDLoQZBz0PAQEBAQEBARIBAQEBBwsLCSEvhDgiEXQBBzcCJBIBBQEiATSIB6JmgTE+MYs2jV8BhHoKhU+EJ4grglYBBJMdhG6ODY8QjWwRHoEOOAEBAYI8gRdXIIl2AQEB
+X-IPAS-Result: A0AJAgDi1w9XkkXXVdFeDg4Bgk6CI6YRCQEGgQ9GggABiz6EdQEBgXuDLoQZBz0PAQEBAQEBARIBAQEBBwsLCSEvhDgiEXQBBzcCJBIBBQEiATSIB6JmgTE+MYs2jV8BhHoKhU+EJ4grglYBBJMdhG6ODY8QjWwRHoEOOAEBAYI8gRdXIIl2AQEB
+X-IronPort-AV: E=Sophos;i="5.24,485,1454994000"; 
+   d="scan'208,217";a="722310305"
+X-Sender-IP: 209.85.215.69
+Received: from mail-lf0-f69.google.com ([209.85.215.69])
+  by iron4.mail.virginia.edu with ESMTP; 14 Apr 2016 13:51:16 -0400
+Received: by mail-lf0-f69.google.com with SMTP id d19so51717053lfb.0
+        for <bef2cj@virginia.edu>; Thu, 14 Apr 2016 10:51:15 -0700 (PDT)
+X-Received: by 10.25.28.80 with SMTP id c77mr7219558lfc.5.1460656274992;
+        Thu, 14 Apr 2016 10:51:14 -0700 (PDT)
+MIME-Version: 1.0
+X-Received: by 10.25.28.80 with SMTP id c77mr7219550lfc.5.1460656274795; Thu,
+ 14 Apr 2016 10:51:14 -0700 (PDT)
+Received: by 10.25.24.42 with HTTP; Thu, 14 Apr 2016 10:51:14 -0700 (PDT)
+Date: Thu, 14 Apr 2016 13:51:14 -0400
+Message-ID: <CAArjpu_74AmOy3zf=39H-Cbbi0c+fV4wvsqxgWS40j2rPzv03w@mail.gmail.com>
+Subject: Dumpling Making Night
+From: Kate Highnam <kwh5ye@virginia.edu>
+To: Westley Weimer <weimer@cs.virginia.edu>, dorn@virginia.edu, 
+	Jamie Floyd <bef2cj@virginia.edu>, Martin Kellogg <mjk6zt@virginia.edu>, 
+	Kevin Angstadt <kaa2nx@virginia.edu>, Kevin Leach <kjl2y@virginia.edu>, rjr7je@virgina.edu, 
+	ast2ae@virginia.edu
+Content-Type: multipart/alternative; boundary=001a11401eba6606a30530758a50
+
+--001a11401eba6606a30530758a50
+Content-Type: text/plain; charset=UTF-8
+
+Hiya!
+
+It had been previously discussed that we would get together at a CERTAIN
+house ("Should be more hands") and make Chinese dumplings (and
+pierogies...??). I have also questioned several people already and the
+weekend of April 29th seems to be a good time.
+
+Are YOU free then?
+
+Cheers,
+Kate
+
+
+
+Kate Highnam
+Resident Advisor, International Residential College
+Computer Science in the School of Engineering and Applied Science
+University of Virginia, Class of 2016
+
+--001a11401eba6606a30530758a50
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><div><div>Hiya!<br><br></div>It had been previou=
+sly discussed that we would get together at a CERTAIN house (&quot;Should b=
+e more hands&quot;) and make Chinese dumplings (and pierogies...??). I have=
+ also questioned several people already and the weekend of April 29th seems=
+ to be a good time.<br><br></div>Are YOU free then?<br><br></div>Cheers,<br=
+></div>Kate<br><div><div><div><div><div><br><br><br clear=3D"all"><div><div=
+><div class=3D"gmail_signature"><div dir=3D"ltr"><div><div dir=3D"ltr"><div=
+><div dir=3D"ltr"><div><div dir=3D"ltr"><span style=3D"font-family:garamond=
+,serif"><font size=3D"4">Kate Highnam</font><br>Resident Advisor, Internati=
+onal Residential College<br>Computer Science in the School of Engineering a=
+nd Applied Science<br>University of Virginia, Class of 2016<br></span><div =
+style=3D"text-align:right"><div style=3D"text-align:right"><br></div><span =
+style=3D"font-family:garamond,serif"></span></div></div></div></div></div><=
+/div></div></div></div></div>
+</div></div></div></div></div></div></div>
+
+--001a11401eba6606a30530758a50--

@@ -1,0 +1,15 @@
+Compile:
+
+use compile.sh
+
+Run:
+
+echo "a input string" | ./scanner
+
+or 
+
+./scanner < input.txt
+
+where input.txt has the input string
+
+FLEX ONLY WORKS ON PLAIN TEXT
